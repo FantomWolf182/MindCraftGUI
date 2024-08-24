@@ -2,7 +2,9 @@
 A GUI application for MindCraft. Aimed to making the program easier to use.
 
 Note: This is not a stand alone program and requires [this repo](https://github.com/kolbytn/mindcraft) to be downloaded
+
 Second Note: To use the Ollama model you still have to start Ollama and install it yourself.
+
 Third Note: If you wonder why I coded this in python... I have no idea, Don't question it.
 
 ### Features:
