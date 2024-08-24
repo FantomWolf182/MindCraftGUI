@@ -11,6 +11,9 @@
 # PyInstaller spec files
 *.spec
 
+# VS code files
+.vs/
+
 # AWS User-specific
 .idea/**/aws.xml
 
