@@ -11,7 +11,7 @@ Second Note: To use the Ollama model you still have to start Ollama and install 
 - Ability to easily select one or more model profiles
 - System/Light/Dark Mode
 - UI scaling options
-- 
+
 ### Various settings:
 - Textbox for Minecraft Version
 - Textbox for Host Address
