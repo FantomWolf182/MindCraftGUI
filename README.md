@@ -1,4 +1,4 @@
-# MindCraftGUI
+# MindCraftGUI 🤯🧠
 A GUI application for MindCraft. Aimed to making the program easier to use.
 
 Note: This is not a stand alone program and requires [this repo](https://github.com/kolbytn/mindcraft) to be downloaded
