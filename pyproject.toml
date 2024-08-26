@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "mindcraft_gui"
-version = "1.0.0"
+version = "1.0.1"
 description = "A GUI application for MindCraft"
 authors = ["FantomWolf182"]
 license = "MIT"
