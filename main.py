@@ -465,6 +465,11 @@ class App(customtkinter.CTk):
             print(line.decode("utf-8"), end="")
 
     def run_bots_button_event(self):
+        thread = threading.Thread(target=self.run_bots)
+        thread.start()
+
+
+    def run_bots(self):
         minecraft_version = self.version_entry.get()
         address = self.address_entry.get()
         port = self.port_entry.get()
@@ -507,15 +512,24 @@ class App(customtkinter.CTk):
 
             # Run the main.js script
             os.chdir(self.selected_folder_path)
-            process = subprocess.Popen(["node", "main.js"], cwd=self.selected_folder_path, shell=True,
-                                       stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+            process = subprocess.Popen(
+                ["node", "main.js"],
+                cwd=self.selected_folder_path,
+                shell=True,
+                stdout=subprocess.PIPE,
+                stderr=subprocess.PIPE,
+                text=True
+            )
 
             # Display the output in real-time
             for line in process.stdout:
-                print(line.decode("utf-8"), end="")
+                print(line, end="")
 
             for line in process.stderr:
-                print(line.decode("utf-8"), end="")
+                print(line, end="")
+
+            process.wait()
+
         else:
             print(f"Error: '{settings_js_path}' does not exist or you forgot to select a Minecraft folder")
 
